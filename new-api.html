@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Map and Weather</title>
+  <style>
+      #map {
+        width: 450px;
+        height: 450px;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+</head>
+<body>
+  <h1>Map and Weather</h1>
+  <div id="map"></div>
+   <br>
+  <label for="location-input">Location: </label>
+  <input id="city-input" placeholder="Enter a location" type="text">
+  <button id="weather-button">Go!</button>
+  <div id="weather-results"></div>
+    <div id="map"></div>
+
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="google_map.js"></script>
+    <script type="weather_api.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWSz6q4cLpxd_i_gck2ue0DUk9KG8PJQw&callback=init"
+    async defer></script>
+</body>
